@@ -1,0 +1,75 @@
+.weatherBox , .weatherBoxSnow , .weatherBoxRain , .weatherBoxCloudy , .weatherBoxThunder
+{
+	position:  fixed;
+	left: 200px; 
+	top: 100px;
+	background-color: rgba(0, 0, 51, 0.5);
+	cursor: grab;
+	-moz-user-select: none;
+	user-select: none;
+	z-index:1;
+}
+	.boxHeader
+	{
+		background-color: rgba(0, 0, 51, 0.8);
+		font-size: 150%;
+		text-align: center;
+		padding: 10px;
+		width:400px;
+	}
+	.tempImWrapper
+	{
+		margin: 10px;
+		display:flex;
+		justify-content: center;
+	}
+		.weatherImBox
+		{
+			width:45%;
+			float: right;
+		}
+			.weatherIm
+			{
+				height: 100px;
+				width: 100px;
+			}
+		.temp
+		{
+			font-size: 400%;
+			width:45%;
+		}
+	.textData
+	{
+		list-style-type: none;
+	}
+	.footer
+	{
+		text-align: right;
+		font-size: 75%;
+		width: 90%;
+		padding-bottom: 10px;
+	}
+
+.myButton {
+	background-color:rgba(0, 0, 51, 0.5);
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:8px solid rgba(0, 0, 51, 0.8);
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:2px 6px;
+	text-decoration:none;
+	float: left;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.updateButton:active {
+	position:relative;
+	top:1px;
+}

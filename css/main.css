@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin:0px;
+	background-color:	#0e0e7c;
+	color:white;
+}
+#background
+{
+	background: url(../images/earthBackground.jpg) no-repeat center center fixed;
+	opacity: 0.5;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position:fixed;
+}
+
+#title
+{
+	background: linear-gradient(to bottom, rgb(59, 59, 79) , rgba(255,0,0,0));
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+	height: 200px;
+	font-size: 200%;
+}

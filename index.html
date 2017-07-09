@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Interaktive Systeme - Template</title>
+	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/clickToStart.css" rel="stylesheet">
+	<link href="css/dropDownList.css" rel="stylesheet">
+	<link href="css/weatherBox.css" rel="stylesheet">
+	<link href="css/weatherBoxTypes.css" rel="stylesheet">
+	<style> body{font-family: 'Audiowide'} </style>
+</head>
+
+<body>
+	<div id="background"></div>
+	<div id="mainBody">
+		<div id="title"> The weather today </div>
+		<div id="dropDownList">
+			<div id="dropDownListHeader"> Add a city of your interest: </div>
+			<div id="dropDown">
+				<div class="dropDown-content" onclick="getData(2950159)">Berlin</div>
+				<div class="dropDown-content" onclick="getData(1850147)">Tokyo</div>
+				<div class="dropDown-content" onclick="getData(2643743)">London</div>
+				<div class="dropDown-content" onclick="getData(524901)">Moscow</div>
+				<div class="dropDown-content" onclick="getData(3435910)">Buenos Aires</div>
+				<div class="dropDown-content" onclick="getData(5128638)">New York</div>
+				<div class="dropDown-content" onclick="getData(2885679)">Konstanz</div>
+				<div class="dropDown-content" onclick="getData(6696480)">McMurdo Station</div>
+			</div>
+		</div>
+		<div id="clickToStart">
+			Double click to start...
+		</div>
+		<audio id='thunderAudio' src="sound/blitzDa.mp3"/>
+		<audio id='birdsAudio' src="sound/birdsDa.mp3"/>
+		<audio id='rainAudio' src="sound/rainDa.mp3"/>
+		<audio id='snowAudio' src="sound/winterDa.mp3"/>
+		<audio autoplay loop id='spaceAudio' src="sound/spaceDa.mp3"/>
+	</div>
+    <!-- jQuery (necessary for Bootstrap s JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+</html>
